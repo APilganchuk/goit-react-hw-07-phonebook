@@ -1,9 +1,8 @@
-.form__label {
-  display: block;
-  margin-bottom: 15px;
+.form {
+  width: 300px;
+  padding: 10px 20px;
 }
-
-.form__input {
+.form input {
   display: block;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }

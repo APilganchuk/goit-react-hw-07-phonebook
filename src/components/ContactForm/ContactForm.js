@@ -27,11 +27,10 @@ class ContactForm extends Component {
   render() {
     const { name, number } = this.state;
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label className={styles.form__label}>
+      <form onSubmit={this.handleSubmit} className={styles.form}>
+        <label>
           Name
           <input
-            className={styles.form__input}
             type="text"
             name="name"
             pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"

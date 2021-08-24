@@ -14,7 +14,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="Wrapper">
         <h1>Phonebook</h1>
         <ContactForm />
         <h2>Contacts</h2>
@@ -22,7 +22,7 @@ class App extends Component {
         {this.props.isLoadingContacts && (
           <Loader
             type="Circles"
-            color="#b2ee8e"
+            color="slateblue"
             height={50}
             width={50}
             timeout={3000}

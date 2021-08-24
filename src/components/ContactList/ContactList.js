@@ -5,9 +5,9 @@ import ProtoTypes from 'prop-types';
 import styles from './ContactList.module.css';
 import ContactItem from '../ContactItem/ContactItem';
 const ContactList = ({ contacts, onDelete }) => (
-  <ul>
+  <ul className={styles.ContactList}>
     {contacts.map(({ id, name, number }) => (
-      <li key={id} className={styles.contact__item}>
+      <li key={id} className={styles.item}>
         <ContactItem
           name={name}
           number={number}
